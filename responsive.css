@@ -1,0 +1,245 @@
+@media (max-width:1000px){
+    
+    h1{
+        font-size: min(5rem,9vw);
+    }
+
+    .header{
+        width: 100vw;
+        overflow: visible;
+    }
+
+    .nav{
+        justify-content: center;
+        align-items: center;
+        height: min(50rem,100vh);
+        width: min(100vw, 40rem);
+        border-radius: 25px 0px 25px 25px;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(40px);
+        flex-direction: column;
+        touch-action: none;
+        transform: translateX(100%);
+        transition: all .5s ease;
+    }
+
+    .nav a{
+        width: 80%;
+        font-size: 1.7rem;
+        height: 25%;
+        border-radius: 0;
+    }
+
+    .nav a:hover{
+        color:initial;
+        background-color: initial;
+    }
+
+    
+    .nav a:nth-child(-n+2){
+        
+        border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    }
+
+    .active{
+        transform: translateX(0);
+    }
+    
+    .search-bar{
+        display: none;
+        
+    }
+
+    header .fa-bars{
+        display: block;
+    
+    }
+    header .fa-xmark{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 15px;
+        transform: translateX(800%);
+        z-index: 11;
+        transition: all .5s ease;
+    
+    }
+
+    /* hero section */
+
+    #hero{
+        background-size: 120vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero::before{
+     bottom: 0;
+    }
+
+    .hero1{
+        padding: 10vw;
+ 
+    }
+
+    .hero1 h1{
+        font-size: 12vw;
+        margin: auto;
+          
+    }
+
+    .hero1 p{
+        width: 100%;
+        font-size: 3.5vw;
+        margin: auto;
+
+    }
+
+    .hero2{
+        margin: 1rem;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .scroll-down{
+        bottom: 10px;
+    }
+
+    /* Popular Cities */
+
+    #cities-main{
+        padding:2.5rem;
+        margin: auto;
+        width: 85vw; 
+        /* gap: 10px; */
+        gap: 3vw;
+    }
+
+    .cities{
+        height: 200px;
+        width: 200px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .text-area{
+        padding: 10px;
+        height: 75px;
+        width:100%;
+        gap: 8px;
+        position: absolute;
+        bottom: 0px; 
+        transform: translateY(0);  
+        backdrop-filter: blur(2px);
+        border-radius: 0;
+    }
+
+    hr{
+        margin: auto ;
+        border-radius: 5px;
+        width: 70vw;
+    }
+
+    #testimonials-main{
+        padding: 10px;
+        padding:4rem;
+        width: min(850px,70vw);
+        gap: 1px;
+        margin-top: 10vw;
+    }
+    .testimonial-slide{
+        transform: scale(.85);
+    }
+
+    
+    #backdrop{background-size: min(1150px,150vw);
+        background-position: center top;
+        background-repeat: repeat-y;
+        position: absolute;
+        top: 90px;
+        left: 0px;
+        z-index: -100;  
+    }
+    #section3{
+        width: 90vw;
+    }
+
+    #innersection3{
+        flex-direction: row;
+        margin: auto;
+        gap: 4rem;
+    }
+    #text{
+        text-align: center;    
+        width: 80vw;
+        height: auto;
+        display: flex;
+        gap: 1.5rem;
+        padding: 0rem;
+        margin: auto;  
+    }
+    #text h1{
+        font-size: min(2.7rem,9vw);
+        text-align: left;
+        margin: auto;
+        text-align: center;
+    }
+    #text p{
+        font-size: 15px;  
+        line-height: 2;
+    }
+    #video-main{
+        margin: auto;
+        height: auto;
+        width: auto;
+
+    } 
+    #section3 video{
+    }
+    #section4 h1{
+        font-size: min(2.7rem,9vw);
+    }
+    #section4 h2{
+        font-size: min(1.5rem,7vw);
+    }
+    .steps-main{
+        margin: auto;
+        gap: 15px;
+        box-sizing: border-box;
+        padding: 0rem;
+    }
+    .steps{
+        width:100%;
+    }
+    #mission{
+        width: 80vw;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    #mission button{
+        margin: auto;
+    }
+    #mission #image{
+        width: 100%;
+        margin: auto;
+      
+         
+    }
+
+    footer .container{
+        width: 80vw;
+    }
+    .col{
+        display: inline-block;
+    }
+    
+
+}
